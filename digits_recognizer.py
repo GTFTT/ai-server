@@ -13,7 +13,7 @@ def load_model(modelName = "digits_recognizer_model"):
 # Takes 28x28 images of pixel values from 0 to 255,
 # converts into array of bytes and predicts
 # returns predicted digit
-def predict_image(image):
+def predict_digit(image):
 
     model = load_model()
 
@@ -48,3 +48,7 @@ def predict_image(image):
     # print("Predictions: ", predictions[0])
     print("Norm predictions: ", np.argmax(predictions[0]))
     return np.argmax(predictions[0])
+
+
+def test():
+    print("Test")

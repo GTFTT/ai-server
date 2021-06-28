@@ -5,3 +5,4 @@ pyvenv.cfg
 /bin
 /__pycache__
 /digits_recognizer_model
+/saved_files
